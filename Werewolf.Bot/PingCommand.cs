@@ -1,4 +1,5 @@
 using Discord.WebSocket;
+using Werewolf.Bot.Commands;
 
 namespace Werewolf.Bot;
 

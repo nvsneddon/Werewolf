@@ -1,6 +1,6 @@
 using Discord.WebSocket;
 
-namespace Werewolf.Bot;
+namespace Werewolf.Bot.Commands;
 
 public interface ISlashCommand
 {

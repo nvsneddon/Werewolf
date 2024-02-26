@@ -1,7 +1,7 @@
 using Discord.WebSocket;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Werewolf.Bot;
+namespace Werewolf.Bot.Commands;
 
 public class SlashCommandHandler(IServiceProvider services)
 {
