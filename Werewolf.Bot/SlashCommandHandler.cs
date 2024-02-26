@@ -3,20 +3,14 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Werewolf.Bot;
 
-public class SlashCommandHandler
+public class SlashCommandHandler(IServiceProvider services)
 {
-    private readonly IServiceProvider _services;
-
-    public SlashCommandHandler(IServiceProvider services)
-    {
-        _services = services;
-    }
-
     public async Task HandleCommandAsync(SocketSlashCommand command)
     {
+        await using var scope = services.CreateAsyncScope();
         ISlashCommand? slashCommand = command.CommandName switch
         {
-            "first-command" => _services.GetRequiredService<PingCommand>(),
+            "first-command" => scope.ServiceProvider.GetRequiredService<PingCommand>(),
             // Add more command mappings here
             _ => null
         };
