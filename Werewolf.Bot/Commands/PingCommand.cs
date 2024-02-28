@@ -1,12 +1,11 @@
 using Discord.WebSocket;
-using Werewolf.Bot.Commands;
 
-namespace Werewolf.Bot;
+namespace Werewolf.Bot.Commands;
 
 public class PingCommand : ISlashCommand
 {
     public async Task ExecuteAsync(SocketSlashCommand command)
     {
-        await command.RespondAsync("Pong!");
+        await command.RespondAsync("Pong!", ephemeral: true);
     }
 }

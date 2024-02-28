@@ -3,7 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Werewolf.Bot.Commands;
 
-public class SlashCommandHandler(IServiceProvider services)
+public class SlashCommandHandler(IServiceProvider services) : ISlashCommandHandler
 {
     public async Task HandleCommandAsync(SocketSlashCommand command)
     {

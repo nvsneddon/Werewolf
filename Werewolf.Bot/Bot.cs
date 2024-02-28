@@ -4,7 +4,7 @@ using Werewolf.Bot.Commands;
 
 namespace Werewolf.Bot;
 
-public class Bot(DiscordSocketClient client, SlashCommandHandler slashCommandHandler)
+public class Bot(DiscordSocketClient client, ISlashCommandHandler slashCommandHandler)
 {
 
     public async Task RunAsync()

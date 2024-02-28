@@ -8,7 +8,7 @@ IServiceProvider services = new ServiceCollection()
     .AddSingleton<DiscordSocketClient>()
     .AddSingleton<CommandService>()
     .AddSingleton<PingCommand>()
-    .AddSingleton<SlashCommandHandler>()
+    .AddSingleton<ISlashCommandHandler, SlashCommandHandler>()
     .AddSingleton<Bot>()
     .BuildServiceProvider();
 
