@@ -6,5 +6,5 @@ namespace Werewolf.Core.Interfaces;
 
 public interface IRoleAssignmentService
 {
-    public IEnumerable<Villager> AssignRoles(IEnumerable<PlayerDto> players);
+    public IEnumerable<Villager> AssignRoles(IList<PlayerDto> players, GameConfiguration gameConfiguration);
 }
