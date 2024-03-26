@@ -1,11 +1,15 @@
+using Discord;
 using Discord.WebSocket;
+using Werewolf.Core.Interfaces;
 
 namespace Werewolf.Bot.Commands;
 
-public class StartCommand : ISlashCommand
+public class StartCommand(IGameService gameService) : ISlashCommand
 {
-    public Task ExecuteAsync(SocketSlashCommand command)
+    public async Task ExecuteAsync(SocketSlashCommand command)
     {
-        return command.RespondAsync("Game started!", ephemeral: true);
+        // var players = command.
+        // await gameService.StartGameAsync();
+        await command.RespondAsync("Game started!", ephemeral: true);
     }
 }
