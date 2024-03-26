@@ -10,7 +10,8 @@ public class SlashCommandHandler(IServiceProvider services) : ISlashCommandHandl
         await using var scope = services.CreateAsyncScope();
         ISlashCommand? slashCommand = command.CommandName switch
         {
-            "first-command" => scope.ServiceProvider.GetRequiredService<PingCommand>(),
+            "ping" => scope.ServiceProvider.GetRequiredService<PingCommand>(),
+            "start" => scope.ServiceProvider.GetRequiredService<StartCommand>(),
             // Add more command mappings here
             _ => null
         };
@@ -21,7 +22,7 @@ public class SlashCommandHandler(IServiceProvider services) : ISlashCommandHandl
         }
         else
         {
-            await command.RespondAsync($"Unknown command {command.CommandName}");
+            await command.RespondAsync($"Unknown command {command.CommandName}", ephemeral: true);
         }
     }
 }

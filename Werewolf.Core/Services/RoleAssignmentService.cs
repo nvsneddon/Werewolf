@@ -8,6 +8,14 @@ namespace Werewolf.Core.Services;
 
 public class RoleAssignmentService(IRandomNumberGenerator randomNumberGenerator) : IRoleAssignmentService
 {
+    public IEnumerable<Villager> AssignRoles(IList<PlayerDto> players)
+    {
+        return AssignRoles(players, new GameConfiguration
+        {
+            Werewolves = 1
+        });
+    }
+
     public IEnumerable<Villager> AssignRoles(IList<PlayerDto> players, GameConfiguration gameConfiguration)
     {
         int werewolfCount = gameConfiguration.Werewolves;
