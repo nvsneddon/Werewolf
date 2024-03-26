@@ -7,7 +7,7 @@ using Werewolf.Bot.Commands;
 IServiceProvider services = new ServiceCollection()
     .AddSingleton<DiscordSocketClient>()
     .AddSingleton<CommandService>()
-    .AddSingleton<PingCommand>()
+    .AddScoped<PingCommand>()
     .AddSingleton<ISlashCommandHandler, SlashCommandHandler>()
     .AddSingleton<Bot>()
     .BuildServiceProvider();

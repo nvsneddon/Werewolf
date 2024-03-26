@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Werewolf.Bot", "Werewolf.Bo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Werewolf.Core", "Werewolf.Core\Werewolf.Core.csproj", "{199E9093-BBE6-4C6F-8C25-C2D5AAFC3E08}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Werewolf.Data", "Werewolf.Data\Werewolf.Data.csproj", "{5416E20F-2657-4B35-B8DC-DEE159D9A0E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{199E9093-BBE6-4C6F-8C25-C2D5AAFC3E08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{199E9093-BBE6-4C6F-8C25-C2D5AAFC3E08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{199E9093-BBE6-4C6F-8C25-C2D5AAFC3E08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5416E20F-2657-4B35-B8DC-DEE159D9A0E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5416E20F-2657-4B35-B8DC-DEE159D9A0E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5416E20F-2657-4B35-B8DC-DEE159D9A0E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5416E20F-2657-4B35-B8DC-DEE159D9A0E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
