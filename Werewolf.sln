@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Werewolf.Bot", "Werewolf.Bot\Werewolf.Bot.csproj", "{5AF4C2A9-8E76-414E-B38E-DD8E572594EB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Werewolf.Core", "Werewolf.Core\Werewolf.Core.csproj", "{199E9093-BBE6-4C6F-8C25-C2D5AAFC3E08}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{5AF4C2A9-8E76-414E-B38E-DD8E572594EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AF4C2A9-8E76-414E-B38E-DD8E572594EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AF4C2A9-8E76-414E-B38E-DD8E572594EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{199E9093-BBE6-4C6F-8C25-C2D5AAFC3E08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{199E9093-BBE6-4C6F-8C25-C2D5AAFC3E08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{199E9093-BBE6-4C6F-8C25-C2D5AAFC3E08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{199E9093-BBE6-4C6F-8C25-C2D5AAFC3E08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
