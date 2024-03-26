@@ -1,6 +1,6 @@
 namespace Werewolf.Core.Interfaces;
 
-public interface IGameController
+public interface IGameService
 {
     public Task StartGameAsync();
 }

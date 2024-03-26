@@ -2,7 +2,7 @@ using Werewolf.Core.Interfaces;
 
 namespace Werewolf.Core.Services;
 
-public class GameController : IGameController
+public class GameService : IGameService
 {
     public Task StartGameAsync()
     {

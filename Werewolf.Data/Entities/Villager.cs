@@ -1,6 +1,6 @@
 namespace Werewolf.Data.Entities;
 
-public class Player
+public class Villager
 {
     public ulong Id { get; set; }
     public Character Character { get; set; }
