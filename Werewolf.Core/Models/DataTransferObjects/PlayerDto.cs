@@ -1,4 +1,4 @@
-namespace Werewolf.Core.Models;
+namespace Werewolf.Core.Models.DataTransferObjects;
 
 public class PlayerDto
 {

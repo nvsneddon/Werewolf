@@ -1,4 +1,4 @@
-namespace Werewolf.Data.Entities;
+namespace Werewolf.Core.Models.Entities;
 
 public class Villager
 {
