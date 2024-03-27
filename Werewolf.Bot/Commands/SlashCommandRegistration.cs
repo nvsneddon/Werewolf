@@ -1,9 +1,8 @@
 using Discord;
-using Discord.WebSocket;
 
 namespace Werewolf.Bot.Commands;
 
-public class SlashCommandRegistrator(DiscordSocketClient client) : ISlashCommandRegistrator
+public class SlashCommandRegistration(IDiscordClient client) : ISlashCommandRegistrator
 {
     private readonly ApplicationCommandProperties[] _applicationCommandProperties =
     [
@@ -23,7 +22,7 @@ public class SlashCommandRegistrator(DiscordSocketClient client) : ISlashCommand
 
     public async Task RegisterSlashCommandsAsync()
     {
-        using var guild = client.GetGuild(681696629224505376);
-        await guild.BulkOverwriteApplicationCommandAsync(_applicationCommandProperties);
+        var guild = await client.GetGuildAsync(681696629224505376);
+        await guild.BulkOverwriteApplicationCommandsAsync(_applicationCommandProperties);
     }
 }
