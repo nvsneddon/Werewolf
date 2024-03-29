@@ -9,8 +9,6 @@ public class StartCommand(IGameService gameService, DiscordSocketClient client) 
 {
     public async Task ExecuteAsync(SocketSlashCommand command)
     {
-        // var players = command.
-        // await gameService.StartGameAsync();
         IGuild? guild = client.GetGuild(command.GuildId ?? 0L);
         if (guild == null)
         {
